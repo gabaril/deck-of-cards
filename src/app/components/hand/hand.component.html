@@ -1,0 +1,11 @@
+<div class="hand">
+  <h2>Your Hand</h2>
+  <div class="cards-wrapper">
+    <ng-container *ngFor="let card of hand">
+      <div class="card {{card.suit.name}}">
+        <div class="rank">{{card.rank.name}}</div>
+        <div class="rank reverse">{{card.rank.name}}</div>
+      </div>
+    </ng-container>
+  </div>
+</div>

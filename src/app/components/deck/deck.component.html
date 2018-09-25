@@ -1,0 +1,15 @@
+<div class="deck-wrapper">
+  <h2>Deck</h2>
+  <div class="card-wrapper">
+    <div class="deck" [ngClass]="{'empty': deckArr.length < 1}"></div>
+    <div class="card {{deckArr[deckArr.length-1].suit.name}}" *ngIf="deckArr.length > 0">
+      <div class="rank">{{deckArr[deckArr.length-1].rank.name}}</div>
+      <div class="rank reverse">{{deckArr[deckArr.length-1].rank.name}}</div>
+    </div>
+  </div>
+  <div class="cmpt">Cards remaining: {{deckArr.length}}</div>
+  <div class="actions-wrapper">
+    <button class="btn" [ngClass]="{'disabled': deckArr.length < 1}" (click)="shuffle()" [disabled]="deckArr.length < 1">Shuffle Deck</button>
+    <button class="btn" [ngClass]="{'disabled': deckArr.length < 1}" (click)="dealOneCard()" [disabled]="deckArr.length < 1">Deal One Card</button>
+  </div>
+</div>

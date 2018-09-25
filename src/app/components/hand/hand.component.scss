@@ -1,0 +1,29 @@
+.hand{
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .cards-wrapper{
+    position: relative;
+    display: block;
+    width: 10rem;
+    height: 16rem;
+    // margin-left: 2rem;
+    .card{
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      &:first-of-type{
+        left: 1rem !important;
+        top: 0 !important;
+      }
+      &:last-of-type{
+        left: -1rem;
+        top: -0.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.deck-wrapper{
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-wrapper{
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  .card{
+    margin: 0;
+    position: absolute;
+    left: -0.25rem;
+    top: -0.25rem;
+  }
+}
+.actions-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.deck{
+  display: flex;
+  width: 10rem;
+  height: 16rem;
+  background-color: white;
+  border: solid 1px #EEEEEE;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 1px #9E9E9E;
+  background-image: url('../../../assets/icons/light_grey.png');
+  background-size: contain;
+  background-repeat: repeat;
+}
